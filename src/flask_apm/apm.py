@@ -17,4 +17,3 @@ class Apm:
             self.collector = ApmCollector(app)
         if serve_user_interface:
             self.user_interface = ApmUserInterface(app)
-

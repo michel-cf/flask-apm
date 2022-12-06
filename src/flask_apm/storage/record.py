@@ -1,5 +1,3 @@
-
-
 class Record:
     timestamp: int
 

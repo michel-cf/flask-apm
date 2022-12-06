@@ -7,7 +7,7 @@ from flask_apm.storage.sqlite import db_access
 class SqliteStorageConnector:
     _conn = None
 
-    def init(self, read_only, conf):
+    def init(self, conf):
         # TODO make db configurable
         if self.create_connection('apm.db'):
             sqlite3.register_adapter(bool, int)
